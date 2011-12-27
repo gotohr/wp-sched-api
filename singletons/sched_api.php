@@ -2,7 +2,7 @@
 
 class SCHED_API {
   
-  static $client_path = '/wp-content/plugins/sched-api/client/';
+  static $client_path = '/wp-content/plugins/wp-sched-api/client/';
   
   function __construct() {
     add_action('wp_print_styles', array($this, 'add_css') );
