@@ -1,0 +1,39 @@
+/* 
+    Document   : sched
+    Created on : Dec 26, 2011, 10:08:33 AM
+    Author     : ljubo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#conference .event .event_start {
+  margin-left: -100px;
+  font-weight: bold;
+  color: red;
+  float: left;
+}
+
+#conference .event .event_end {
+/*  margin-left: -150px;*/
+  font-weight: bold;
+  color: red;
+  float: right;
+}
+
+#conference .event .name {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+#conference .event .description {
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 2px gray dashed;
+  display: none;
+}
+
