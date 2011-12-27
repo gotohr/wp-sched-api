@@ -1,0 +1,9 @@
+After cloning this plugin under wp-content/plugins
+go to sched api plugin page under settings.
+
+Enter dev key.
+
+Usage:
+
+Create page or post. Put this shortcode:
+[conference name="[key_of_conference]"]
