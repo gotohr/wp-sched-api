@@ -8,6 +8,7 @@ class SCHED_API {
     add_action('wp_print_styles', array($this, 'add_css') );
     add_action('wp_print_scripts', array($this, 'add_js') );
     add_shortcode( 'conference', array($this, 'shortcode_conference') );
+    add_shortcode( 'embeds', array($this, 'shortcode_embeds') );
   }
 
   function add_css() {
@@ -29,6 +30,12 @@ class SCHED_API {
         var c = new Conference(jQuery("#conference"), sched_data);
       });</script>';
     return sprintf($out, $events_json);
+  }
+  
+  //[embeds]
+  function shortcode_embeds( $atts ){
+    $out = '<script type="text/javascript" src="http://%s.sched.org/embed"></script>';
+    return sprintf($out, $atts['conference']);
   }
   
   function get_key() { 
