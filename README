@@ -7,3 +7,18 @@ Usage:
 
 Create page or post. Put this shortcode:
 [conference name="[key_of_conference]"]
+
+or...(you don't need to enter dev key for this)
+
+Use embeded version of sched:
+[embeds conference="cw11"] - this will embed conference in place
+
+There are three variables used to control the embed
+* Page to embed (the p="page_to_embed” parameter)
+* Sidebar's visibility (sidebar="no" parameter) 
+* Width of embed (the w="width_in_pixels” parameter)
+
+example:
+[embeds conference="cw11" p="attendees/speakers" sidebar="no" w="700"]
+
+visit http://sched.desk.com/customer/portal/articles/341534-embed-overview

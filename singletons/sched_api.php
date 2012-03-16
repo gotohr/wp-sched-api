@@ -34,8 +34,11 @@ class SCHED_API {
   
   //[embeds]
   function shortcode_embeds( $atts ){
-    $out = '<script type="text/javascript" src="http://%s.sched.org/embed"></script>';
-    return sprintf($out, $atts['conference']);
+    $out = '<script type="text/javascript" src="http://%s.sched.org/embed%s"></script>';
+    $conference = $atts['conference'];
+    unset($atts['conference']);
+    $query = count($atts) ? '?'.http_build_query($atts) : '';
+    return sprintf($out, $conference, $query);
   }
   
   function get_key() { 
